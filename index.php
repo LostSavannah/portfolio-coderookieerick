@@ -19,13 +19,13 @@
                 </div-->
                 <div class="col-12">
                     <div class="bio-data">
-                        <div class="h4">809-409-4484</div>
-                        <a 
-                                    href="javascript:showMail()" 
-                                    id="email" 
-                                >
-                                Mostrar Email
-                                </a>
+                        <div class="h4">
+                        <a href="javascript:showPhone();" id="phone">
+                            Mostrar Tel&eacute;fono
+                         </a></div>
+                        <a href="javascript:showMail();" id="email">
+                            Mostrar Email
+                         </a>
                     </div>
                     
                 </div>
@@ -38,7 +38,7 @@
                         Si gusta puede explorar mis <a href="./projects.php">proyectos recientes</a>.
                     </div>
                     <div class="bio-p">
-                        Ademas puede consultar mis habilidades <a href="./projects.php">aqui</a>.
+                        Ademas puede consultar mis habilidades <a href="./habilities.php">aqui</a>.
                     </div>
                     <div></div>
                 </div>
@@ -50,9 +50,15 @@
     </body>
     <script>    
         let showMail = () =>{
-            let email = 'erickfernandomoraramirez@gmail.com'
+            let email = 'erickfernandomoraramirez@gmail.com';
             $("#email").attr('href', `mailto:${email}`).text(email);
         };
+
+        let showPhone = () =>{
+            let phoneNumber = '809-409-4484';
+            $("#phone").text(phoneNumber);
+        };
+
         $(document).ready(()=>{
         });
     </script>

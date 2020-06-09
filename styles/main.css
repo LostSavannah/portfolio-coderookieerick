@@ -1,3 +1,18 @@
+:root{
+    --dark-primary-color: #1976D2;
+    --default-primary-color: #2196F3;
+    --light-primary-color: #BBDEFB;
+    --text-primary-color: #FFFFFF;
+    --accent-color: #03A9F4;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --divider-color: #BDBDBD;
+}
+
+body{
+    background:var(--text-primary-color);
+}
+
 header{
     padding: 0.5em;
 }
@@ -8,4 +23,18 @@ nav{
 
 img{
     scale: 1;
+}
+
+a{
+    color: var(--default-primary-color);
+    /*border-radius: 3px 3px;*/
+    text-decoration: none;
+}
+.bio-card{
+    margin: 0.3em;
+    margin-bottom: 1em;
+    color: var(--primary-text-color);
+    background: var(--text-primary-color);
+    border-radius: 3px 3px;
+    box-shadow: gray 3px 3px 3px;
 }
