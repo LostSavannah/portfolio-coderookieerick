@@ -1,4 +1,7 @@
-/*let getRepositories = (userName, callback = null)=>{
+<?PHP
+    /*
+    JS 
+        let getRepositories = (userName, callback = null)=>{
     callback = callback || ((d)=>{});
     $.ajax({
         url:`https://api.github.com/users/${userName}/repos`,
@@ -14,15 +17,11 @@ let getReadme = (userName, repository, callback = null)=>{
         accepts:{test:"application/vnd.github.v3+json"},
         success:callback
     })
-}*/
-
-let getRepositories = (userName, callback = null)=>{
-    callback = callback || ((d)=>{});
-    $.ajax({
-        url:`listProjects.php`,
-        accepts:{test:"application/vnd.github.v3+json"},
-        success:callback
-    })
 }
+    */
 
-getRepositories('codeRookieErick');
+    //TODO: Authenticated github request here
+
+    header("Content-Type:text/json");
+    readfile('test.json');
+?>

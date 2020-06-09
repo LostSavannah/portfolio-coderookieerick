@@ -5,3 +5,7 @@ header{
 nav{
     padding: 0.5em;
 }
+
+img{
+    scale: 1;
+}
