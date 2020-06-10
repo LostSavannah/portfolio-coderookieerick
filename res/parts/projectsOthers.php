@@ -8,36 +8,40 @@
         </div>
 
         <div class="col-12">
-            <table class="table" id="repositoriesList">
-                <tr>
-                    <td><strong>Nombre</strong></td>
-                    <td><strong>Descripcion</strong></td>
-                    <td><strong>Lenguaje</strong></td>
-                    <td><strong>Fecha creaci&oacute;n</strong></td>
-                    <td><strong>Fecha actualizaci&oacute;n</strong></td>
-                    <td><strong></strong></td>
-                    <?php
-                        $files = array_filter(scandir('projects/'), function($f){return substr($f, -5)===".json";});
-                    
-                        //print_r($files);
-                    ?>    
+            <div class="container">
+                        <?php
+                            $files = array_filter(scandir('projects/'), function($f){return substr($f, -5)===".json";});
+
+                            //print_r($files);
+                        ?>    
                         <?PHP foreach($files as $jsonFile):
                             $project = json_decode(file_get_contents('projects/'.$jsonFile));
                         ?>
-                            <tr>
-                            <td><?PHP echo $project->name;?></td>
-                            <td><?PHP echo $project->description;?></td>
-                            <td><?PHP echo $project->language;?></td>
-                            <td><?PHP echo $project->creationDate;?></td>
-                            <td><?PHP echo $project->updateDate;?></td>
-                            <td><a class="btn btn-primary" href="<?echo $project->url.$project->linkProperties;?>">
-                                <?PHP echo $project->urlText; ?>
-                            </td>
-                            </tr>
+                            
+                            <div class="row bio-card">
+                                <div class="col-12 h4">
+                                <?PHP echo $project->name;?>
+                                <span class="h5">
+                                (<?PHP echo $project->language ?? "Sin especificar";?>)
+                                </span>
+                                </div>
+                                <div class="col-12">
+                                    <?PHP echo $project->description ?? "Sin especificar";?>   
+                                </div>
+                                <div class="col-12 col-md-4 h6 date">
+                                    <?PHP echo $project->creationDate ?? "Sin especificar";?>   
+                                </div>
+                                <div class="col-12 col-md-4 h6 date">
+                                    <?PHP echo $project->updateDate ?? "Sin especificar";?> 
+                                </div>
+                                <div class="col-12 col-md-4 text-right">
+                                    <a class="btn btn-primary" href="<?PHP echo $project->url.$project->linkProperties;?>">
+                                    <?PHP echo $project->urlText; ?></a>
+                                </div>
+                            </div>
                         
                     <?PHP endforeach; ?>
-                </tr>
-            </table>
+            </div>
         </div>
     </div>    
 </div>

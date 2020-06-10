@@ -17,8 +17,23 @@ header{
     padding: 0.5em;
 }
 
-nav{
-    padding: 0.5em;
+nav, nav a{
+    padding: 1em;
+}
+
+nav a{
+    background-color: var(--dark-primary-color);
+    color: var(--text-primary-color);
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: none;
+}
+
+nav a:active{
+    background-color: var(--default-primary-color);
+    color: var(--text-primary-color);
 }
 
 img{
@@ -37,4 +52,26 @@ a{
     background: var(--text-primary-color);
     border-radius: 3px 3px;
     box-shadow: gray 3px 3px 3px;
+}
+
+.bio-p{
+    padding: 1em 1em;
+    border-left: var(--dark-primary-color) 0.5em solid;
+    transition: border-left 0.25s;
+}
+
+.bio-p:hover{
+    border-left: var(--primary-text-color) 0.5em solid;
+}
+
+#presentation:nth-child(odd){
+    text-align: right;
+}
+
+header{
+    background-color: #000;
+    background-image: url("../res/img/header.png");
+    background-repeat: round;
+    background-size: contain;
+    color: white;
 }

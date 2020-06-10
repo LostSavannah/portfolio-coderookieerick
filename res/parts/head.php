@@ -6,4 +6,5 @@
     <script src="scripts/jquery-3.4.1.js"></script>
     <script src="scripts/bootstrap.js"></script>
     <script src="scripts/github.js"></script>
+    <script src="scripts/presentationShower.js"></script>
 </head>

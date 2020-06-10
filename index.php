@@ -13,7 +13,7 @@
             include('./res/parts/subHeader.php'); 
         ?>
         <div class="container bio">
-            <div class="row">
+            <div class="row bio-card">
                 <!--div class="col-12">
                     <img src="./res/img/foto.png" alt=""/>
                 </div-->
@@ -29,7 +29,7 @@
                     </div>
                     
                 </div>
-                <div class="col-12">
+                <div class="col-12" id="presentation">
                     <h5>Saludos</h5>
                     <div class="bio-p">
                         Soy un desarrollador de software muy entusiasta y capaz, con dominio de areas muy variadas.
@@ -40,7 +40,6 @@
                     <div class="bio-p">
                         Ademas puede consultar mis habilidades <a href="./habilities.php">aqui</a>.
                     </div>
-                    <div></div>
                 </div>
             </div>
         </div>
@@ -60,6 +59,7 @@
         };
 
         $(document).ready(()=>{
+            
         });
     </script>
 </html>
