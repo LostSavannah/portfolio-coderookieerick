@@ -1,3 +1,3 @@
-1	1	Scripts Manager	./viewProject.php?id=1	/	Un administrador de scripts en python, php y nodejs que se comunica con estos usando sockets tcp.
-2	2	NewsWebCrawler.py	./viewProject.php?id=19	/	Un script que recolecta informacion de sitios de noticias nacionales.
-3	2	HotSwap.py	./viewProject.php?id=19	/	Un script capaz de recargar otros scripts cuando detecta que fueron modificados.
+1	1	Scripts Manager	./viewProject.php?id=1	https://github.com/codeRookieErick/ScriptsManager	Un administrador de scripts en python, php y nodejs que se comunica con estos usando sockets tcp.
+2	2	NewsWebCrawler.py	./viewProject.php?id=2	https://github.com/codeRookieErick/NewsCrawler	Un script que recolecta informacion de sitios de noticias nacionales.
+3	2	HotSwap.py	./viewProject.php?id=3	https://github.com/codeRookieErick/HotSwap	Un script capaz de recargar otros scripts cuando detecta que fueron modificados.

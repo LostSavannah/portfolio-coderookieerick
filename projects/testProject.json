@@ -1,10 +1,10 @@
 {
-    "name":"Test project",
-    "description":"Test description",
-    "language":"Test project",
-    "creationDate":"Test project",
-    "updateDate":"Test project",
-    "url":"Test project",
-    "urlText":"Test project",
+    "name":"Mi Pequeña Cartera",
+    "description":"App de manejo de gastos. Actualmente en proceso de revision para pruebas internas en Play Store",
+    "language":"Xamarin Android",
+    "creationDate":"2020-06-01 08:12:00",
+    "updateDate":"--",
+    "url":"#",
+    "urlText":"Proximamente...",
     "linkProperties":""
 }

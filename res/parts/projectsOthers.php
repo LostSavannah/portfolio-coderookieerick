@@ -1,7 +1,7 @@
 <div class="container" id="projectsAtGithub">
     <div class="row">
         <div class="col-12">
-            <h3>Otros Proyectos</h3>
+            <h3>Proyectos</h3>
         </div>
         <div class="col-12 alert alert-info">
             Estos proyectos se encuentran en diversas ubicaciones.

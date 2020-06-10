@@ -12,8 +12,8 @@
             include('./res/parts/nav.php'); 
             include('./res/parts/subHeader.php'); 
         ?>
-        <?php include('./res/parts/projectsAtGithub.php');?>
         <?php include('./res/parts/projectsOthers.php');?>
+        <?php include('./res/parts/projectsAtGithub.php');?>
         <?php
             include('./res/parts/footer.php');
         ?>
