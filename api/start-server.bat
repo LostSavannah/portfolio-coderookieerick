@@ -1,0 +1,4 @@
+@echo off
+COLOR F0
+TITLE SERVER 45051
+php -S 0.0.0.0:45051
