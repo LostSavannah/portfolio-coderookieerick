@@ -1,9 +1,12 @@
 <?PHP
+	ini_set('display_errors', 1);
+	error_reporting(E_WARNING|E_ERROR|E_NOTICE);
 
     ///Thanks to https://stackoverflow.com/users/711784/dbau
     function request($url, $method, $params=null, $header=null){
         $params = $params ?? array();
         $protocol = explode(":", $url)[0];
+	print($protocol);
         $header = $header ?? array();
         $headerArr = array();
         foreach($header as $key => $value){

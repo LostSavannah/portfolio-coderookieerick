@@ -19,7 +19,7 @@ let getReadme = (userName, repository, callback = null)=>{
 let getRepositories = (userName, callback = null)=>{
     callback = callback || ((d)=>{});
     $.ajax({
-        url:`api/listProjects.php`,
+        url:`https://api.github.com/users/codeRookieErick/repos`,
         accepts:{test:"application/vnd.github.v3+json"},
         success:callback
     })
