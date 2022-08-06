@@ -1,7 +1,10 @@
 name: Portafolios
+
 on:
+
   push:
     branches: [ "main" ]
+
   workflow_dispatch:
 
 jobs:
