@@ -9,11 +9,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
-    runs-on: self-hosted
-    steps:
-      - run: |
-        echo "Test passed!"
   publish:
     runs-on: self-hosted
     steps:
